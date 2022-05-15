@@ -1,9 +1,68 @@
 body {
     background-color: rgba(255, 255, 255, 0.874);
+    
+    height:1792px;
 }
-.header {
+header {
 display: grid;
+grid-template-columns: 350px;
 width: 1920px;
 height:48px;
 background-color: #FFFD00 ;
+}
+
+h2 {
+   text-align: right;
+   height:48px;
+}
+.search-container {
+    display: grid;
+    grid-template: "search-empty search-box label label" 30px/2fr 1fr 711px 310px;
+    width: 1920px;
+    height:48px;
+    background-color: whitesmoke;
+}
+
+.search-empty {
+    width: 500px;
+}
+
+#article {
+    grid-area: label;
+    margin-left: 2px;
+}
+
+#author {
+    grid-area: label;
+    margin-left: 146px;
+}
+
+label {
+    color: blueviolet;
+}
+
+#search-box {
+    width:250px;
+    border-radius:46px;
+}
+.container {
+    display: grid;
+    width:1185px;
+    height: 1607px;
+    top: 135px;
+    left: 367px;
+}
+#button {
+display: grid;
+grid-template-rows: 350px/1fr 20px;
+width:200px;
+height:50px;
+border-radius: 100px;
+size:14px;
+background-color:yellow;
+}
+
+.but {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

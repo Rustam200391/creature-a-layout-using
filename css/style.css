@@ -114,9 +114,8 @@ a {
     justify-content: center;    
     width:153px;
     height:52px;
-    margin-top: 912px;
+    margin-top: 812px;
     left: 1664px;
-    padding: 11px, 31px, 11px, 31px;
     background-color:white;
     border-radius:120px;
     text-align: center;
@@ -126,13 +125,13 @@ a {
 
 #button {
   position: relative;
-  width:400px;
+  width:200px;
   height:50px;
   border-radius: 100px;
   size:14px;
   background-color:yellow;
-  left: 107px;
-  top: 1634px;
+  left: 218px;
+  top: 812px;
 }
 
 .but {

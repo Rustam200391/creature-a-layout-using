@@ -1,68 +1,128 @@
-body {
-    background-color: rgba(255, 255, 255, 0.874);
-    
-    height:1792px;
-}
-header {
-display: grid;
-grid-template-columns: 350px;
-width: 1920px;
-height:48px;
-background-color: #FFFD00 ;
+.maket {
+  background-color: #E5E5E5;
+  position: relative;
+  height:1880px;
+  width: 1920px;
 }
 
-h2 {
-   text-align: right;
-   height:48px;
+header {
+  display: grid;
+  grid-template-columns: 460px;
+  width: 1920px;
+  height:48px;
+  background-color: #FFFD00 ;
+}
+
+.top {
+  margin-top: 1px;
+  text-align: right;
+  
 }
 .search-container {
-    display: grid;
-    grid-template: "search-empty search-box label label" 30px/2fr 1fr 711px 310px;
-    width: 1920px;
-    height:48px;
-    background-color: whitesmoke;
+  display: grid;
+  grid-template: "search-empty search-box label label" 30px/3fr 1fr 603px 5px;
+  width: 1920px;
+  height:48px;
+  background-color: #FFFFFF;
+  position: relative;
 }
 
 .search-empty {
-    width: 500px;
+  width: 500px;
 }
 
 #article {
-    grid-area: label;
-    margin-left: 2px;
+  grid-area: label;
+  margin-left: 2px;
 }
 
 #author {
-    grid-area: label;
-    margin-left: 146px;
+  grid-area: label;
+  margin-left: 146px;
 }
 
 label {
-    color: blueviolet;
+  color: blueviolet;
 }
 
 #search-box {
-    width:250px;
-    border-radius:46px;
+  width:250px;
+  border-radius:46px;
 }
+
 .container {
-    display: grid;
-    width:1185px;
-    height: 1607px;
-    top: 135px;
-    left: 367px;
+  display: grid;
+  grid-template: 632px 315px 315px 292px /589px 595px;
+  width: 1185px;
+  height: 1575px;
+  top: 135px;
+  left: 367px;
+  position: absolute;
+  background-color: white;
 }
+
+.item1  {
+  width:585px;
+  height:615px;
+  background-image: url(../imgs/pic1.png);
+}
+
+
+.item3,.item4,.item5,.item6,.item7,.item8 {
+  width: 585px;
+  height: 300px;
+  margin-top: 1px;
+  background-color: #001aff;
+}
+
+.item2 {
+    width: 585px ;
+    height: 615px;
+    display: grid;
+    grid-template: 309.5px 309.5px/ 296.5px 296.5px;
+}
+
+.mini1, .mini2, .mini3, .mini4 {
+    border: 2px black solid;
+}
+
+.mini1,.mini4 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background: #FFFFFF;
+}
+
+h1 {
+    color: chartreuse;
+    text-align: right;
+}
+
+
+a {
+    color: blueviolet;
+}
+
+.pic1 {
+    display: grid;
+    grid-template-columns: 1px;
+    height: 131px;
+    background: url(..//imgs/pic1.png);
+}
+
 #button {
-display: grid;
-grid-template-rows: 350px/1fr 20px;
-width:200px;
-height:50px;
-border-radius: 100px;
-size:14px;
-background-color:yellow;
+  position: relative;
+  width:400px;
+  height:50px;
+  border-radius: 100px;
+  size:14px;
+  background-color:yellow;
+  left: 107px;
+  top: 1634px;
 }
 
 .but {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
 }

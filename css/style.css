@@ -7,8 +7,8 @@ body, *, *::after, *::before {
 .maket {
   background-color: #E5E5E5;
   position: relative;
-  /* height:1880px;
-  width: 1920px; */
+  height:1880px;
+  /* width: 1920px; */
 }
 
 header {
@@ -58,8 +58,10 @@ label {
 
 img {
   width: 100%;
-  height: auto;
+  height: 60%;
+  object-fit: cover;
 }
+
 
 
 .container {
@@ -73,6 +75,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 8px;
+  margin-top: 40px;
 }
 
 .section1__item.main img {
@@ -90,7 +93,20 @@ img {
 .section1__item:nth-child(n+6) {
   grid-row: span 2;
   grid-column: span 2;
+  margin: 9px 3px 1px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 8px 8px white inset; /*вставлял для размытие правого края картинки не получилось*/
 }
+
+.section1__item:nth-child(n+6) img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  flex-direction: row;
+
+}
+
 .section1__item
 .section1__item img {
   background: #fff;
@@ -98,6 +114,13 @@ img {
 }
 .section1__item-content {
   padding: 15px;
+  align-self: flex-end;
+}
+
+.section1__item-content-1 {
+  padding: 15px;
+  display: grid;
+  align-self: flex-end;
 }
 .section1__item h2 {
   font-size: 20px;
@@ -108,12 +131,14 @@ img {
   max-height: 52px;
   overflow: hidden;
 }
+
+
 .section1__item-number {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin: 0 -2px;
-
+  color: #7CF253;
 }
 .section1__item-number > div {
   padding: 0 2px;
@@ -171,21 +196,21 @@ img {
     top: 812px;
   }
 
-  .but {
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  #back {
+    width:200px;
+    height:50px;
+    border-radius: 100px;
+    size:14px;
+    background-color:rgb(253, 253, 253);
+    left: 218px;
+    top: 812px;
   }
 
-  .cameback {
-    display: inline-block;
-    justify-content: center;    
-    width:153px;
-    height:52px;
-    left: 1664px;
-    background-color:white;
-    border-radius:120px;
-    text-align: center;
+
+  
+a {
+  margin-top: 1px;
+  padding-top: 1px;
 }
 
 

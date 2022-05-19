@@ -8,7 +8,7 @@ body, *, *::after, *::before {
   background-color: #E5E5E5;
   position: relative;
   height:1880px;
-  /* width: 1920px; */
+  width: 1920px;
 }
 
 header {
@@ -25,7 +25,7 @@ header {
   
 }
 .search-container {
-  display: grid;
+  /*display: grid;
   grid-template: "search-empty search-box label label" 30px/3fr 1fr 603px 5px;
   /* width: 1920px; */
   height:48px;
@@ -34,17 +34,21 @@ header {
 }
 
 .search-empty {
-  width: 500px;
+  width: 450px;
+  max-width: 470px;
 }
 
 #article {
+  position: relative;
+  margin-left: 975px;
   grid-area: label;
-  margin-left: 88px;
+  /*margin-left: 88px;*/
 }
 
 #author {
+  position: relative;
   grid-area: label;
-  margin-left: 225px;
+  margin-left: 30px;
 }
 
 label {
@@ -52,21 +56,22 @@ label {
 }
 
 #search-box {
-  width:250px;
+  position:relative;
+  left: 950px;
+  width:255px;
+  height: 30px;
   border-radius:46px;
 }
 
 img {
-  width: 100%;
-  height: 60%;
+  width: 226px;
+  height: 103px;
   object-fit: cover;
 }
 
-
-
 .container {
   max-width: 1185px;
-  width: 100%;
+  width: 950px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -79,16 +84,22 @@ img {
 }
 
 .section1__item.main img {
-  height: 70%;
+  height: 335px;
+  width: 452px;
   object-fit: cover;
 }
 .section1__item {
   background: #fff;
   border-radius: 12px;
 }
+
+.horizontal-gradient {
+  background: linear-gradient(to right, blue, pink);
+}
+
 .section1__item:first-child {
   grid-row: span 2;
-  grid-column:  span 2;
+grid-column:  span 2;
 }
 .section1__item:nth-child(n+6) {
   grid-row: span 2;
@@ -96,12 +107,13 @@ img {
   margin: 9px 3px 1px;
   display: flex;
   flex-direction: row;
-  box-shadow: 0 0 8px 8px white inset; /*вставлял для размытие правого края картинки не получилось*/
+  box-shadow: 0 0 8px 8px white inset; 
 }
 
+
 .section1__item:nth-child(n+6) img {
-  width: 30%;
-  height: 100%;
+  width: 206px;
+  height: 200px;
   object-fit: cover;
   flex-direction: row;
 
@@ -113,25 +125,33 @@ img {
   border-radius: 12px;
 }
 .section1__item-content {
-  padding: 15px;
+  padding: 8px;
   align-self: flex-end;
 }
 
 .section1__item-content-1 {
   padding: 15px;
-  display: grid;
-  align-self: flex-end;
+  display: inline-block;
+  top: 1px;
 }
 .section1__item h2 {
   font-size: 20px;
+
 }
 .section1__item p {
-  font-size: 13px;
+  font-size: 10.5px;
   line-height: 1;
   max-height: 52px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
 }
 
+a {
+  margin-top: 1px;
+  padding-top: 1px;
+}
 
 .section1__item-number {
   display: flex;
@@ -140,12 +160,15 @@ img {
   margin: 0 -2px;
   color: #7CF253;
 }
+
 .section1__item-number > div {
   padding: 0 2px;
 }
+
 .section1__item-number .number{
   font-size: 30px;
 }
+
 .section1__item-number .plus,
 .section1__item-number .minus {
   width: 28px;
@@ -156,6 +179,7 @@ img {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
+
 .section1__item-number .plus::after,
 .section1__item-number .minus::after {
   content: "";
@@ -167,6 +191,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .section1__item-number .minus::after {
   background: #FF9494;
 }
@@ -175,6 +200,7 @@ img {
 .section1__item-number .plus::before {
   background: #7CF253;
 }
+
 .section1__item-number .plus::before {
   content: "";
   display: block;
@@ -190,157 +216,27 @@ img {
     width:200px;
     height:50px;
     border-radius: 100px;
-    size:14px;
+    font-size:14px;
     background-color:yellow;
-    left: 218px;
-    top: 812px;
+    position: relative;
+    left: 853px;
+    top: 72px;
+    border: none;
   }
 
   #back {
     width:200px;
     height:50px;
     border-radius: 100px;
-    size:14px;
+    font-size:14px;
     background-color:rgb(253, 253, 253);
-    left: 218px;
-    top: 812px;
+    position: fixed;
+    left: 1600px;
+    top: 700px;
+    border: none;
   }
-
-
   
-a {
-  margin-top: 1px;
-  padding-top: 1px;
-}
-
-
-/* .container {
-  display: grid;
-  grid-template: 632px 315px 315px 292px /600px 585px;
-  width: 1185px;
-  height: 1575px;
-  top: 135px;
-  left: 367px;
-  position: absolute;
-  background-color: white;
-}
-
-.item1  {
-  width:585px;
-  height:615px;
-  display: grid;
-  background-size: 100%;
-}
-
-
-.item3,.item4,.item5,.item6,.item7,.item8 {
-  width: 585px;
-  height: 300px;
-  margin-top: 1px;
-  display: grid;
-  grid-template-columns: repeat(2, 226px);
-  grid-template-rows: repeat(1, 294px);
-  background-size: 100%;
-}
-.item3 img {
-  height: 100%;
-  object-fit: cover;
-}
-
-    
 
 
 
-.item2 {
- width: 585px ;
- height: 615px;
- display: grid;
- grid-template: 309.5px 309.5px/ 296.5px 287.5px;
- 
-}
-
-.mini2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 100px);
-  background: url(..//imgs/party.png) no-repeat;
-  background-size: 100%;
-}
-
-.mini3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 100px);
-  background: url(..//imgs/pic1.png) no-repeat;
-  background-size: 100%;
-}
-
-.card-article {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 100px);
-  overflow: hidden;
-}
-
-img {
-  display: block;
-  width: 99%;
-  height: 56%;
-  object-fit: cover;
-}
-
-h1 {
-  color: chartreuse;
-  text-align: right;
-}
-
-a {
-  color: blueviolet;
-}
-
-
-
-.circul-minus, .circul-plus {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 8px;
-  border-radius: 45px;
-  background-color: white;
-  width: 39px;
-  height: 37px;
-}
-
-.cameback {
-  display: inline-block;
-  justify-content: center;    
-  width:153px;
-  height:52px;
-  margin-top: 812px;
-  left: 1664px;
-  background-color:white;
-  border-radius:120px;
-  text-align: center;
-  margin-left: 1666px;;
-}
-
-
-#button {
-  position: relative;
-  width:200px;
-  height:50px;
-  border-radius: 100px;
-  size:14px;
-  background-color:yellow;
-  left: 218px;
-  top: 812px;
-}
-
-.but {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-
-} */
 

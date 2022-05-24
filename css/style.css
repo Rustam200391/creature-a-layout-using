@@ -13,8 +13,7 @@ body, *, *::after, *::before {
 
 header {
   display: grid;
-  grid-template-columns: 460px;
-  /* width: 1920px; */
+  grid-template-columns: 560px;
   height:48px;
   background-color: #FFFD00 ;
 }
@@ -26,9 +25,7 @@ header {
   
 }
 .search-container {
-  /*display: grid;
-  grid-template: "search-empty search-box label label" 30px/3fr 1fr 603px 5px;
-  /* width: 1920px; */
+
   height:48px;
   background-color: #FFFFFF;
   position: relative;

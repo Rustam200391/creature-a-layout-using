@@ -17,11 +17,22 @@
   font-weight: 600;
   text-transform: capitalize;*/
 
+  body, *, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-content {
+  width: 1303px;
+  height:486px;
+  top:135px;
+  left:308px;
+}
 
 header {
   display: grid;
-  grid-template-columns: 460px;
-  /* width: 1920px; */
+  grid-template-columns: 760px;
   height:48px;
   background-color: #FFFD00 ;
 }
@@ -33,9 +44,6 @@ header {
   
 }
 .search-container {
-  /*display: grid;
-  grid-template: "search-empty search-box label label" 30px/3fr 1fr 603px 5px;
-  /* width: 1920px; */
   height:48px;
   background-color: #FFFFFF;
   position: relative;
@@ -48,9 +56,8 @@ header {
 
 #article {
   position: relative;
-  margin-left: 735px;
+  margin-left: 1400px;
   grid-area: label;
-
 }
 
 #author {
@@ -65,7 +72,7 @@ label {
 
 #search-box {
   position:relative;
-  left: 728px;
+  left: 1300px;
   width:255px;
   height: 30px;
   border-radius:46px;
@@ -78,7 +85,15 @@ main {
   padding: 35px 11px;
 }
 
+.top-section  {
+    height: 486px;
+    width: 1303px;
+    background-image: url(./imgs/viser.png);    
+}
+
 .middle {
+  height: 486px;
+  width: 1303px;
   background-color: blueviolet;
   grid-row: span 2;
   grid-column: span 2;
@@ -88,30 +103,29 @@ main {
 }
 
 .middle-img {
-  width: 199px;
+  width: 376px;
+  height:376.94;
   object-fit: cover;
   flex-direction: row;
-  margin: 69px 75px;
+  margin: 55px 75px;
   background-image: url(./imgs/ok.png);
   background-size: cover;
 }
 
 .middle-text {
   color: #FFFFFF;
+  position: relative;
+  margin: 70px 0px 0px;
 }
 
-h3 {
-  text-align: center;
+.middle-text h3 {
+  text-align: left;
 }
 
-.top-section  {
-    height: 486px;
-    background-image: url(./imgs/viser.png);    
-}
 
 p {
-  width:463px;
-  max-height: 126px;
+  width:600px;
+  max-height: 137px;
   overflow: hidden;
 }
 
@@ -127,54 +141,69 @@ li {
 
 .content-box {
   position: relative;
-  margin:19px 246px 3px;
+  margin:126px 246px 3px;
   column-count: 3;
-  text-align:center;
+	column-gap: 48px;
+	text-align: justify;
+  width:847px;
 }
 
 .down {
   background-color:#3D0062;
   color: #FFFFFF;
-
+  width:1303px;
+  left:308px;
+  height:503px;
 }
 
+.down h3 {
+  text-align: center;
+  margin-top: 10px;
+}
 </style>
     <title>Document</title>
 </head>
 <body>
-  <header>
-    <h2 class="top">My Blog</h2>
-</header>    
 
-<div class="search-container">
-    <div class="search-empty"></div>
-    <input type="search" placeholder="Search" id="search-box">
-    <label for="search-box" id="article">Добавить статью</label>
-    <label for="search-box" id="author" >Об авторе</label>
 </div>
-    <main>
-        <section class="top-section"></section>
-        <section class="middle">
-            <div class="middle-img"></div>
-            <div class="middle-text">
+<header>
+  <h2 class="top">My Blog</h2>
+</header> 
+  <div class="main-contant">
+     
+      <div class="search-container">
+          <div class="search-empty"></div>
+          <input type="search" placeholder="Search" id="search-box">
+          <label for="search-box" id="article">Добавить статью</label>
+          <label for="search-box" id="author" >Об авторе</label>
+      </div>
+          <main>
+              <section class="top-section"></section>
+              <section class="middle">
+                  <div class="middle-img"></div>
+                  <div class="middle-text">
+                      <h3>Lorem ipsum</h3>
+                      <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, magnam? Praesentium      cupiditate nesciunt eius voluptatum, mollitia, distinctio at minus eveniet delectus     dignissimos voluptatibus vero fugiat? Maiores culpa magnam aliquid delectus! Lorem      ipsum dolor, sit amet consectetur adipisicing elit. Animi beatae odit culpa est      doloremque corrupti optio quaerat nisi! Reiciendis enim ad accusantium, totam animi      doloribus esse porro temporibus dolore voluptate! Lorem ipsum dolor sit amet     consectetur adipisicing elit. At quo, neque quaerat commodi dolorem dolores    necessitatibus. At enim quod autem fugit unde ipsam, dolor quae incidunt tenetur quam,       blanditiis harum.
+                      </p>
+                  <ul>
+                      <li>Элемент списка 1</li>
+                      <li>Элемент списка 2</li>
+                      <li>Элемент списка 3</li>
+                  </ul>
+                  </div>
+              </section>
+              <section class="down">
                 <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, magnam? Praesentium cupiditate nesciunt eius voluptatum, mollitia, distinctio at minus eveniet delectus dignissimos voluptatibus vero fugiat? Maiores culpa magnam aliquid delectus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi beatae odit culpa est doloremque corrupti optio quaerat nisi! Reiciendis enim ad accusantium, totam animi doloribus esse porro temporibus dolore voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo, neque quaerat commodi dolorem dolores necessitatibus. At enim quod autem fugit unde ipsam, dolor quae incidunt tenetur quam, blanditiis harum.
-                </p>
-            <ul>
-                <li>Элемент списка 1</li>
-                <li>Элемент списка 2</li>
-                <li>Элемент списка 3</li>
-            </ul>
-            </div>
-        </section>
-        <section class="down">
-          <h3>Lorem ipsum</h3>
-          
-            <p class="content-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nibh ipsum. Quisque eu ultricies ipsum, id mattis augue. Ut interdum, lorem et vestibulum posuere, dui ligula iaculis nunc, gravida facilisis turpis libero quis nisl. Aliquam quis odio nisi. Phasellus faucibus tortor eget consectetur ornare. Suspendisse eu arcu in tortor fermentum faucibus. 
-            </p>
-            
-        </section>
-    </main>
+
+                  <p class="content-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nibh      ipsum. Quisque eu ultricies ipsum, id mattis augue. Ut interdum, lorem et vestibulum      posuere, dui ligula iaculis nunc, gravida facilisis turpis libero quis nisl. Aliquam quis     odio nisi. Phasellus faucibus tortor eget consectetur ornare. Suspendisse eu arcu in tortor      fermentum faucibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ab voluptate maiores consequuntur exercitationem illum laudantium quo doloribus. Optio labore accusantium alias cum odio nihil error fuga! Praesentium, dolorem id.
+                  Praesentium asperiores officia, veniam, enim totam sapiente deleniti doloribus dolore perspiciatis fugit voluptatibus ipsa et maxime nostrum velit voluptatem sint debitis beatae quasi. Incidunt amet consequuntur iste quam mollitia reprehenderit?
+                  Soluta quaerat nobis ducimus voluptatibus molestias, unde amet delectus nam laboriosam sapiente! Fugit officiis totam eum facilis dolor aliquid sapiente quae repudiandae doloribus quod reiciendis veniam illo tempora, voluptas nesciunt!
+                  Dolorum voluptas libero consectetur possimus nam, repellendus commodi est mollitia odio itaque recusandae rem quia hic veniam sint soluta cum voluptate aperiam reiciendis fugiat maxime eligendi sapiente accusantium. Eos, reprehenderit.
+                  Placeat repellendus totam quos impedit eaque, odio quibusdam aliquam quas vero nisi fugit reprehenderit, possimus illo commodi. Dolore asperiores nesciunt suscipit, quaerat aliquid voluptatibus, nihil doloremque harum distinctio vitae facere? 
+                  </p>
+
+              </section>
+          </main>
     <footer></footer>
 </body>
 </html>

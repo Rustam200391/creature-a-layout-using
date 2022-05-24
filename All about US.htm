@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+@font-face {
+  font-family: "Garbens-Italic";
+  src: url("fonts/early-day/1001fonts-early-day-eula.txt");
+  font-weight: normal;
+}
+* {
+  /*font-family: "Garbens-Italic";
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;*/
+}
+
+header {
+  display: grid;
+  grid-template-columns: 460px;
+  /* width: 1920px; */
+  height:48px;
+  background-color: #FFFD00 ;
+}
+
+
+.top {
+  margin-top: 1px;
+  text-align: right;
+  
+}
+.search-container {
+  /*display: grid;
+  grid-template: "search-empty search-box label label" 30px/3fr 1fr 603px 5px;
+  /* width: 1920px; */
+  height:48px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.search-empty {
+  width: 450px;
+  max-width: 470px;
+}
+
+#article {
+  position: relative;
+  margin-left: 735px;
+  grid-area: label;
+
+}
+
+#author {
+  position: relative;
+  grid-area: label;
+  margin-left: 30px;
+}
+
+label {
+  color: blueviolet;
+}
+
+#search-box {
+  position:relative;
+  left: 728px;
+  width:255px;
+  height: 30px;
+  border-radius:46px;
+}
+
+main {
+  max-width: 1185px;
+  width: 950px;
+  margin: 0 auto;
+  padding: 35px 11px;
+}
+
+.middle {
+  background-color: blueviolet;
+  grid-row: span 2;
+  grid-column: span 2;
+  margin: 0px 0px -19px;
+  display: flex;
+  flex-direction: row;
+}
+
+.middle-img {
+  width: 199px;
+  object-fit: cover;
+  flex-direction: row;
+  margin: 69px 75px;
+  background-image: url(./imgs/ok.png);
+  background-size: cover;
+}
+
+.middle-text {
+  color: #FFFFFF;
+}
+
+h3 {
+  text-align: center;
+}
+
+.top-section  {
+    height: 486px;
+    background-image: url(./imgs/viser.png);    
+}
+
+p {
+  width:463px;
+  max-height: 126px;
+  overflow: hidden;
+}
+
+ul {
+  padding:2px;
+  width:430px;
+  margin:15px;
+}
+
+li {
+  padding:10px;
+}
+
+.content-box {
+  position: relative;
+  margin:19px 246px 3px;
+  column-count: 3;
+  text-align:center;
+}
+
+.down {
+  background-color:#3D0062;
+  color: #FFFFFF;
+
+}
+
+</style>
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <h2 class="top">My Blog</h2>
+</header>    
+
+<div class="search-container">
+    <div class="search-empty"></div>
+    <input type="search" placeholder="Search" id="search-box">
+    <label for="search-box" id="article">Добавить статью</label>
+    <label for="search-box" id="author" >Об авторе</label>
+</div>
+    <main>
+        <section class="top-section"></section>
+        <section class="middle">
+            <div class="middle-img"></div>
+            <div class="middle-text">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, magnam? Praesentium cupiditate nesciunt eius voluptatum, mollitia, distinctio at minus eveniet delectus dignissimos voluptatibus vero fugiat? Maiores culpa magnam aliquid delectus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi beatae odit culpa est doloremque corrupti optio quaerat nisi! Reiciendis enim ad accusantium, totam animi doloribus esse porro temporibus dolore voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo, neque quaerat commodi dolorem dolores necessitatibus. At enim quod autem fugit unde ipsam, dolor quae incidunt tenetur quam, blanditiis harum.
+                </p>
+            <ul>
+                <li>Элемент списка 1</li>
+                <li>Элемент списка 2</li>
+                <li>Элемент списка 3</li>
+            </ul>
+            </div>
+        </section>
+        <section class="down">
+          <h3>Lorem ipsum</h3>
+          
+            <p class="content-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nibh ipsum. Quisque eu ultricies ipsum, id mattis augue. Ut interdum, lorem et vestibulum posuere, dui ligula iaculis nunc, gravida facilisis turpis libero quis nisl. Aliquam quis odio nisi. Phasellus faucibus tortor eget consectetur ornare. Suspendisse eu arcu in tortor fermentum faucibus. 
+            </p>
+            
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

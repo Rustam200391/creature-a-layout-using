@@ -7,8 +7,8 @@
     <style>
         
 @font-face {
-  font-family: "Garbens-Italic";
-  src: url("fonts/early-day/1001fonts-early-day-eula.txt");
+  font-family: "Roboto";
+  src: url("fonts/Roboto/Roboto.ttf");
   font-weight: normal;
 }
 /*/ {
@@ -32,16 +32,24 @@
 
 header {
   display: grid;
-  grid-template-columns: 760px;
+  grid-template-columns: 360px;
   height:48px;
   background-color: #FFFD00 ;
+  width: 1580px;
 }
 
 
 .top {
   margin-top: 1px;
   text-align: right;
-  
+}
+
+h2 {
+  font-weight:bold;/*700*/
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
 }
 .search-container {
   height:48px;
@@ -56,14 +64,24 @@ header {
 
 #article {
   position: relative;
-  margin-left: 1400px;
+  margin-left: 867px;
   grid-area: label;
+  font-family: 'Roboto';
+  font-style: normal;/*400*/
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 #author {
   position: relative;
   grid-area: label;
-  margin-left: 30px;
+  margin-left: 31px;
+  font-family: 'Roboto';
+  font-style: normal;/*400*/
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 label {
@@ -72,7 +90,7 @@ label {
 
 #search-box {
   position:relative;
-  left: 1300px;
+  left: 750px;
   width:255px;
   height: 30px;
   border-radius:46px;
@@ -103,11 +121,11 @@ main {
 }
 
 .middle-img {
-  width: 376px;
+  width: 2114px;
   height:376.94;
   object-fit: cover;
   flex-direction: row;
-  margin: 55px 75px;
+  margin: 61px 75px;
   background-image: url(./imgs/ok.png);
   background-size: cover;
 }
@@ -117,17 +135,18 @@ main {
   position: relative;
   margin: 70px 0px 0px;
 }
-
-.middle-text h3 {
+.state
+ {
+   position: relative;
   text-align: left;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
 }
 
-
-p {
-  width:600px;
-  max-height: 137px;
-  overflow: hidden;
-}
 
 ul {
   padding:2px;
@@ -137,8 +156,20 @@ ul {
 
 li {
   padding:10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
 }
-
+.text-muted {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+}
 .content-box {
   position: relative;
   margin:126px 246px 3px;
@@ -146,7 +177,15 @@ li {
 	column-gap: 48px;
 	text-align: justify;
   width:847px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
 }
+
+
 
 .down {
   background-color:#3D0062;
@@ -156,9 +195,20 @@ li {
   height:503px;
 }
 
+
 .down h3 {
+  position: relative;
   text-align: center;
-  margin-top: 10px;
+  top: 70px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: -0.02em;
 }
 </style>
     <title>Document</title>
@@ -182,8 +232,8 @@ li {
               <section class="middle">
                   <div class="middle-img"></div>
                   <div class="middle-text">
-                      <h3>Lorem ipsum</h3>
-                      <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, magnam? Praesentium      cupiditate nesciunt eius voluptatum, mollitia, distinctio at minus eveniet delectus     dignissimos voluptatibus vero fugiat? Maiores culpa magnam aliquid delectus! Lorem      ipsum dolor, sit amet consectetur adipisicing elit. Animi beatae odit culpa est      doloremque corrupti optio quaerat nisi! Reiciendis enim ad accusantium, totam animi      doloribus esse porro temporibus dolore voluptate! Lorem ipsum dolor sit amet     consectetur adipisicing elit. At quo, neque quaerat commodi dolorem dolores    necessitatibus. At enim quod autem fugit unde ipsam, dolor quae incidunt tenetur quam,       blanditiis harum.
+                      <h3 class="state">Lorem ipsum</h3>
+                      <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, magnam? Praesentium      cupiditate nesciunt eius voluptatum, mollitia, distinctio at minus eveniet delectus     dignissimos voluptatibus vero fugiat? Maiores culpa magnam aliquid delectus! Lorem      ipsum dolor, sit amet consectetur adipisicing elit. Animi beatae odit culpa est      doloremque corrupti optio quaerat nisi! Reiciendis enim ad accusantium, totam animi      doloribus esse porro temporibus dolore voluptate! Lorem ipsum dolor sit amet     consectetur adipisicing elit. At quo, neque quaerat commodi dolorem dolores    necessitatibus. At enim quod autem fugit unde ipsam, dolor quae incidunt tenetur quam,blanditiis harum.
                       </p>
                   <ul>
                       <li>Элемент списка 1</li>
@@ -195,7 +245,7 @@ li {
               <section class="down">
                 <h3>Lorem ipsum</h3>
 
-                  <p class="content-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nibh      ipsum. Quisque eu ultricies ipsum, id mattis augue. Ut interdum, lorem et vestibulum      posuere, dui ligula iaculis nunc, gravida facilisis turpis libero quis nisl. Aliquam quis     odio nisi. Phasellus faucibus tortor eget consectetur ornare. Suspendisse eu arcu in tortor      fermentum faucibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ab voluptate maiores consequuntur exercitationem illum laudantium quo doloribus. Optio labore accusantium alias cum odio nihil error fuga! Praesentium, dolorem id.
+                  <p class="content-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nibh ipsum. Quisque eu ultricies ipsum, id mattis augue. Ut interdum, lorem et vestibulum  posuere, dui ligula iaculis nunc, gravida facilisis turpis libero quis nisl. Aliquam quis odio nisi. Phasellus faucibus tortor eget consectetur ornare. Suspendisse eu arcu in tortor  fermentum faucibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ab voluptate maiores consequuntur exercitationem illum laudantium quo doloribus. Optio labore accusantium alias cum odio nihil error fuga! Praesentium, dolorem id.
                   Praesentium asperiores officia, veniam, enim totam sapiente deleniti doloribus dolore perspiciatis fugit voluptatibus ipsa et maxime nostrum velit voluptatem sint debitis beatae quasi. Incidunt amet consequuntur iste quam mollitia reprehenderit?
                   Soluta quaerat nobis ducimus voluptatibus molestias, unde amet delectus nam laboriosam sapiente! Fugit officiis totam eum facilis dolor aliquid sapiente quae repudiandae doloribus quod reiciendis veniam illo tempora, voluptas nesciunt!
                   Dolorum voluptas libero consectetur possimus nam, repellendus commodi est mollitia odio itaque recusandae rem quia hic veniam sint soluta cum voluptate aperiam reiciendis fugiat maxime eligendi sapiente accusantium. Eos, reprehenderit.

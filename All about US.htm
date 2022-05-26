@@ -23,21 +23,26 @@
   box-sizing: border-box;
 }
 
+.maket {
+  background-color: #E5E5E5;
+  position: relative;
+  /*height:1792px;*/
+  width: 1920px;
+}
+
 .main-content {
-  width: 1303px;
-  height:486px;
-  top:135px;
-  left:308px;
+  max-width: 1185px;
+  width: 950px;
+  margin: 0 auto;
+  padding: 110px 11px;
 }
 
 header {
   display: grid;
-  grid-template-columns: 360px;
+  grid-template-columns: 575px;
   height:48px;
   background-color: #FFFD00 ;
-  width: 1580px;
 }
-
 
 .top {
   margin-top: 1px;
@@ -51,37 +56,38 @@ h2 {
   font-size: 20px;
   line-height: 23px;
 }
+
 .search-container {
-  height:48px;
-  background-color: #FFFFFF;
-  position: relative;
+height:48px;
+background-color: #FFFFFF;
+position: relative;
 }
 
 .search-empty {
-  width: 450px;
-  max-width: 470px;
+width: 450px;
+max-width: 470px;
 }
 
 #article {
-  position: relative;
-  margin-left: 867px;
-  grid-area: label;
-  font-family: 'Roboto';
-  font-style: normal;/*400*/
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+position: relative;
+margin-left: 1305px;
+grid-area: label;
+font-family: 'Roboto';
+font-style: normal;/*400*/
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
 }
 
 #author {
-  position: relative;
-  grid-area: label;
-  margin-left: 31px;
-  font-family: 'Roboto';
-  font-style: 400;
-  font-weight: normal;/*400*/
-  font-size: 14px;
-  line-height: 16px;
+position: relative;
+grid-area: label;
+margin-left: 30px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;/*400*/
+font-size: 14px;
+line-height: 16px;
 }
 
 label {
@@ -90,7 +96,7 @@ label {
 
 #search-box {
   position:relative;
-  left: 750px;
+  left: 1150px;
   width:255px;
   height: 30px;
   border-radius:46px;
@@ -217,7 +223,7 @@ li {
 </head>
 <body>
 
-</div>
+<div class="maket">
 <header>
   <h2 class="top">My Blog</h2>
 </header> 
@@ -256,6 +262,7 @@ li {
 
               </section>
           </main>
+    </div>
     <footer></footer>
 </body>
 </html>

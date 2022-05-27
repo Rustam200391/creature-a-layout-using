@@ -4,221 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        
-@font-face {
-  font-family: "Roboto";
-  src: url("fonts/Roboto/Roboto.ttf");
-  font-weight: normal;
-}
-/* {
-  /*font-family: "Garbens-Italic";
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-transform: capitalize;*/
-
-  body, *, *::after, *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.maket {
-  background-color: #E5E5E5;
-  position: relative;
-  /*height:1792px;*/
-  width: 1920px;
-}
-
-.main-content {
-  max-width: 1185px;
-  width: 950px;
-  margin: 0 auto;
-  padding: 110px 11px;
-}
-
-header {
-  display: grid;
-  grid-template-columns: 575px;
-  height:48px;
-  background-color: #FFFD00 ;
-}
-
-.top {
-  margin-top: 1px;
-  text-align: right;
-}
-
-h2 {
-  font-weight:bold;/*700*/
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 20px;
-  line-height: 23px;
-}
-
-.search-container {
-height:48px;
-background-color: #FFFFFF;
-position: relative;
-}
-
-.search-empty {
-width: 450px;
-max-width: 470px;
-}
-
-#article {
-position: relative;
-margin-left: 1305px;
-grid-area: label;
-font-family: 'Roboto';
-font-style: normal;/*400*/
-font-weight: normal;
-font-size: 14px;
-line-height: 16px;
-}
-
-#author {
-position: relative;
-grid-area: label;
-margin-left: 30px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: normal;/*400*/
-font-size: 14px;
-line-height: 16px;
-}
-
-label {
-  color: blueviolet;
-}
-
-#search-box {
-  position:relative;
-  left: 1150px;
-  width:255px;
-  height: 30px;
-  border-radius:46px;
-}
-
-main {
-  max-width: 1185px;
-  width: 950px;
-  margin: 0 auto;
-  padding: 35px 11px;
-}
-
-.top-section  {
-    height: 486px;
-    width: 1303px;
-    background-image: url(./imgs/viser.png);    
-}
-
-.middle {
-  height: 486px;
-  width: 1303px;
-  background-color: blueviolet;
-  grid-row: span 2;
-  grid-column: span 2;
-  margin: 0px 0px -19px;
-  display: flex;
-  flex-direction: row;
-}
-
-.middle-img {
-  width: 2114px;
-  height:376.94;
-  object-fit: cover;
-  flex-direction: row;
-  margin: 61px 75px;
-  background-image: url(./imgs/ok.png);
-  background-size: cover;
-}
-
-.middle-text {
-  color: #FFFFFF;
-  position: relative;
-  margin: 70px 0px 0px;
-}
-.state
- {
-  position: relative;
-  text-align: left;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 34px;
-  letter-spacing: -0.02em;
-  text-transform:capitalize;
-  line-height: 1.8;
-}
-
-
-ul {
-  padding:2px;
-  width:430px;
-  margin:15px;
-}
-
-li {
-  padding:10px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 20px;
-  line-height: 23px;
-}
-.text-muted {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.02em;
-}
-.content-box {
-  position: relative;
-  margin:126px 246px 3px;
-  column-count: 3;
-	column-gap: 48px;
-	text-align: justify;
-  width:847px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight:normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.02em;
-}
-
-
-
-.down {
-  background-color:#3D0062;
-  color: #FFFFFF;
-  width:1303px;
-  left:308px;
-  height:503px;
-}
-
-
-.down h3 {
-  position: relative;
-  text-align: center;
-  top: 70px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 34px;
-  line-height: 40px;
-  text-transform:capitalize;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: -0.02em;
-}
-</style>
+    <link rel="stylesheet" href="css/All about us.css">
     <title>Document</title>
 </head>
 <body>
@@ -231,17 +17,28 @@ li {
      
       <div class="search-container">
           <div class="search-empty"></div>
-          <input type="search" placeholder="Search" id="search-box">
-          <label for="search-box" id="article">Добавить статью</label>
-          <label for="search-box" id="author" >Об авторе</label>
+          
+          <div class="article">
+            <input type="search" placeholder="Search" class="search-box">
+            <a >Добавить статью</a>
+            <a >Об авторе</a>
+          </div>
       </div>
           <main>
-              <section class="top-section"></section>
+              <section class="top-section"><img src="imgs/viser.png" alt="обзор"></section>
               <section class="middle">
-                  <div class="middle-img"></div>
+                  <div class="middle-img"><img src="imgs/ok.png" alt="finger"></div>
                   <div class="middle-text">
                       <h3 class="state">Lorem ipsum</h3>
-                      <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, magnam? Praesentium      cupiditate nesciunt eius voluptatum, mollitia, distinctio at minus eveniet delectus     dignissimos voluptatibus vero fugiat? Maiores culpa magnam aliquid delectus! Lorem      ipsum dolor, sit amet consectetur adipisicing elit. Animi beatae odit culpa est      doloremque corrupti optio quaerat nisi! Reiciendis enim ad accusantium, totam animi      doloribus esse porro temporibus dolore voluptate! Lorem ipsum dolor sit amet     consectetur adipisicing elit. At quo, neque quaerat commodi dolorem dolores    necessitatibus. At enim quod autem fugit unde ipsam, dolor quae incidunt tenetur quam,blanditiis harum.
+                      <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Illo, magnam? Praesentium cupiditate nesciunt eius voluptatum, mollitia, 
+                        distinctio at minus eveniet delectus dignissimos voluptatibus vero fugiat?
+                        Maiores culpa magnam aliquid delectus! Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Animi beatae odit culpa est doloremque corrupti optio quaerat 
+                        nisi! Reiciendis enim ad accusantium, totam animi doloribus esse porro temporibus
+                        dolore voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        At quo, neque quaerat commodi dolorem dolores necessitatibus. At enim quod autem
+                        fugit unde ipsam, dolor quae incidunt tenetur quam,blanditiis harum.
                       </p>
                   <ul>
                       <li>Элемент списка 1</li>
@@ -253,11 +50,21 @@ li {
               <section class="down">
                 <h3>Lorem ipsum</h3>
 
-                  <p class="content-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nibh ipsum. Quisque eu ultricies ipsum, id mattis augue. Ut interdum, lorem et vestibulum  posuere, dui ligula iaculis nunc, gravida facilisis turpis libero quis nisl. Aliquam quis odio nisi. Phasellus faucibus tortor eget consectetur ornare. Suspendisse eu arcu in tortor  fermentum faucibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ab voluptate maiores consequuntur exercitationem illum laudantium quo doloribus. Optio labore accusantium alias cum odio nihil error fuga! Praesentium, dolorem id.
-                  Praesentium asperiores officia, veniam, enim totam sapiente deleniti doloribus dolore perspiciatis fugit voluptatibus ipsa et maxime nostrum velit voluptatem sint debitis beatae quasi. Incidunt amet consequuntur iste quam mollitia reprehenderit?
-                  Soluta quaerat nobis ducimus voluptatibus molestias, unde amet delectus nam laboriosam sapiente! Fugit officiis totam eum facilis dolor aliquid sapiente quae repudiandae doloribus quod reiciendis veniam illo tempora, voluptas nesciunt!
-                  Dolorum voluptas libero consectetur possimus nam. Repellendus commodi est mollitia odio itaque recusandae rem quia hic veniam sint soluta cum voluptate aperiam reiciendis fugiat maxime eligendi sapiente accusantium. Eos, reprehenderit.
-                  Placeat repellendus totam quos impedit eaque, odio quibusdam aliquam quas vero nisi fugit reprehenderit, possimus illo commodi. Dolore asperiores nesciunt suscipit, quaerat aliquid voluptatibus, nihil doloremque harum distinctio vitae facere?  Placeat repellendus totam quos impedit.Phasellus faucibus tortor eget.Phasellus faucibus tortor eget consectetur totam quos impedit na.
+                  <p class="content-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a 
+                  nibh ipsum. Quisque eu ultricies ipsum, id mattis augue. Ut interdum, lorem et 
+                  vestibulum  posuere, dui ligula iaculis nunc, gravida facilisis turpis libero quis nisl.
+                  Aliquam quis odio nisi. Phasellus faucibus tortor eget consectetur ornare. Suspendisse
+                  eu arcu in tortor  fermentum faucibus. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Repellendus ab voluptate maiores consequuntur exercitationem illum laudantium quo 
+                  doloribus. Optio labore accusantium alias cum odio nihil error fuga! At quo, neque commodi
+                  dolorem dolores enim. Alias cum odio nihil error fuga Praesentium, dolorem id.
+                  Praesentium asperiores officia, veniam, enim totam sapiente deleniti doloribus dolore 
+                  perspiciatis fugit voluptatibus ipsa et maxime nostrum velit voluptatem sint debitis beatae 
+                  quasi. Incidunt amet consequuntur iste quam mollitia reprehenderit?
+                  Soluta quaerat nobis ducimus voluptatibus molestias, unde amet delectus nam laboriosam
+                  sapiente! Fugit officiis totam eum facilis dolor aliquid sapiente quae repudiandae doloribus
+                  quod reiciendis.Soluta quaerat nobis ducimus voluptatibus molestias, unde amet delectus nam laboriosam
+                  sapiente!
                   </p>
 
               </section>

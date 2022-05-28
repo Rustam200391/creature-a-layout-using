@@ -272,6 +272,7 @@ a {
     position: relative;
     height:fit-content;
     width: 1920px;
+    cursor: pointer;
   }
 
   .back {

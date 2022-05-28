@@ -4,6 +4,10 @@ body, *, *::after, *::before {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family:Roboto;
+  src: url("./fonts/roboto.eot")
+}
 .maket {
   background-color: #E5E5E5;
   position: relative;
@@ -283,12 +287,32 @@ a {
     display: none;
   }
 
+  .section1__item-content {
+    padding: 8px;
+    align-self: flex-start;
+    font-weight: bold;
+  }
+  .section1__item p {
+    font-size: 16px;
+    max-height: 52px;
+    font-weight: normal;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+  }
+  
   .section1__item.main img {
     width:577.31px;
     height: 300px;
     border-radius: 6px;
     object-fit: cover;
     flex-direction: row;
+  }
+  .section1__item h2 {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: robot;
   }
 
   img {
@@ -320,6 +344,10 @@ a {
     border-radius: 12px;
   }
 
+  a {
+    font-weight: normal; 
+    font-size: 14px;
+  }
   .button {
     left: 555px;
   }

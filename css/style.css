@@ -114,7 +114,7 @@ img {
 
 .section1__item:first-child {
   grid-row: span 2;
-grid-column:  span 2;
+  grid-column:  span 2;
 }
 .section1__item:nth-child(n+6) {
   grid-row: span 2;
@@ -140,18 +140,20 @@ grid-column:  span 2;
 }
 .section1__item-content {
   padding: 8px;
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 .section1__item-content-1 {
-  padding: 15px;
+  padding: 30px;
   display: inline-block;
   top: 1px;
 }
+
 .section1__item h2 {
   font-size: 20px;
 
 }
+
 .section1__item p {
   font-size: 10.5px;
   line-height: 1;
@@ -284,6 +286,22 @@ a {
     display: none;
   }
 
+
+  .section1__item:first-child {
+    height: 300px;
+    width: 1185px;
+    align-self: flex-start;
+  }
+
+  .section1__item:nth-child(n+6) {
+    height: 300px;
+    width: 1185px;
+    margin: 9px 3px 1px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 8px 8px white inset; 
+  }
+  
   .number {
     display: none;
   }
@@ -294,13 +312,19 @@ a {
     font-weight: bold;
   }
 
-  .section1__item {
-    display: flex;
-    width:115px;
+  .section1__item-content-1 {
+    padding: 8px;
+    display: inline-block;
+    font-weight: bold;
   }
 
+
+
   .section1__item img {
-    height: 40% !important;
+    height: 300px;
+    /* width: 1185px; */
+    object-fit: cover;
+    flex-direction: row;
   }
 
   .section1__item p {
@@ -315,11 +339,12 @@ a {
   }
   
   .section1__item.main img {
-    height: 100% !important;
+    height: 300px;
     border-radius: 6px;
     object-fit: cover;
     flex-direction: row;
   }
+
   .section1__item h2 {
     font-size: 34px;
     font-weight: bold;
@@ -327,8 +352,8 @@ a {
   }
 
   img {
-    width:50%;
-    height: 100%;
+    width:450px;
+    height: 200px;
     border-radius: 6px;
     object-fit: cover;
     flex-direction: row;
@@ -341,16 +366,23 @@ a {
   }
 
   .section1__item:nth-child(n+6) img {
-    height: 100% !important;
+    height: 300px;
+    width: 1185px;
     object-fit: cover;
     flex-direction: row;
   }
 
   .section1__item {
-    width:100%;
-    height:100%;
+    /* height: 300px;
+    width: 1185px;
     margin: 9px 3px 1px;
-    border-radius: 12px;
+    border-radius: 12px; */
+    height: 300px;
+    width: 1185px;
+    margin: 9px 3px 1px;
+    display: flex;
+
+    box-shadow: 0 0 8px 8px white inset; 
   }
 
   a {

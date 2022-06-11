@@ -12,7 +12,7 @@ body, *, *::after, *::before {
   background-color: #E5E5E5;
   position: relative;
   height:1792px;
-  width: 1920px;
+  width: 194vw;
 }
 
 header {

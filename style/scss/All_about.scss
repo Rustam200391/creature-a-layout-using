@@ -1,0 +1,150 @@
+@use '../middle/index';
+
+@mixin text-style {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+}
+
+body, *, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto.ttf");
+    font-style: normal;/*400*/
+    font-weight: normal;/*400*/
+  }
+  
+  .maket {
+    background-color: #E5E5E5;
+    position: relative;
+    /*height:1792px;*/
+    width: 1920px;
+  }
+  
+  .main-content {
+    max-width: 1185px;
+    width: 950px;
+    margin: 0 auto;
+    padding: 110px 11px;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 462px;
+    height:48px;
+    background-color: #FFFD00 ;
+  }
+  
+  h2 {
+    font-weight:bold;/*700*/
+    font-size: 20px;
+    line-height: 23.44px;
+    margin-top: 1px;
+    text-align: right;
+  }
+  
+  .search-container {
+    height:48px;
+    background-color: #FFFFFF;
+    position: relative;
+  }
+    
+  .search-empty {
+    width: 450px;
+    max-width: 470px;
+  }
+    
+  .article {
+    position: relative;
+    margin-left: 1046px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  a {
+    margin: 20px;
+  }
+    
+  .search-box {
+    position:relative;
+    width:255px;
+    height: 30px;
+    border-radius:46px;
+  }
+  
+  main {
+    max-width: 1185px;
+    margin: 52px auto;
+    padding: 35px 11px;
+  }
+  
+  .top-section  {
+    height: 486px;
+    width: 1303px;
+  }
+  
+  .state {
+    position: relative;
+    text-align: left;
+    font-weight: bold;
+    font-size: 34px;
+    letter-spacing: -0.02em;
+    text-transform:capitalize;
+    line-height: 1.8;
+  }
+  
+  ul {
+    width:430px;
+    margin:15px;
+    padding:14px;
+    font-weight: Bold;
+    font-size: 20px;
+    line-height: 23px;
+    li {
+      padding: 10px;
+    }
+  }
+  
+  .text-muted {
+    @include text-style;
+    margin: 1px 1px;
+  }
+  
+  .content-box {
+    position: relative;
+    margin:126px 246px 3px;
+    column-count: 3;
+    column-gap: 48px;
+    text-align: justify;
+    width:847px;
+    @include text-style;
+    // font-size: 16px;
+    // line-height: 19px;
+    // letter-spacing: -0.02em;
+  }
+  
+  .down {
+    background-color:#3D0062;
+    color: #FFFFFF;
+    width:1303px;
+    left:308px;
+    height:503px;
+    h3 {
+      position: relative;
+      text-align: center;
+      top: 70px;
+      font-weight: Bold;
+      font-size: 34px;
+      line-height: 40px;
+      text-transform:capitalize;
+      /* identical to box height */
+      text-align: center;
+      letter-spacing: -0.02em;
+   }
+  }
+  

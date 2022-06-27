@@ -287,7 +287,7 @@ footer {
   }
 
   .search-box {
-    left: 1703px;
+    left: 900px;
   }
 
   .article {
@@ -308,7 +308,7 @@ footer {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: 195vw;
+    width: 100vw;
     cursor: pointer;
   }
 

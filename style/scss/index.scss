@@ -37,8 +37,10 @@ body, *, *::after, *::before {
   }
   
   @font-face {
-    font-family:Roboto;
-    src: url("./fonts/roboto.eot")
+    font-family:"Roboto";
+    src: url("./fonts/roboto.eot");
+    font-style:normal;
+    font-weight:normal;
   }
 
   
@@ -69,7 +71,7 @@ body, *, *::after, *::before {
   .article {
     @include relative;
     margin-left: 975px;
-    /*margin-left: 88px;*/
+    font-family:"Roboto";
   }
   
   .author {
@@ -246,6 +248,8 @@ body, *, *::after, *::before {
   
   .section1__item-number .number{
     font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
   }
   
   .section1__item-number .plus,

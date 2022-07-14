@@ -12,8 +12,10 @@ body, *, *::after, *::before {
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto";
   src: url("./fonts/roboto.eot");
+  font-style:normal;
+  font-weight:normal;
 }
 header {
   display: grid;
@@ -42,7 +44,7 @@ header {
   position: relative;
   grid-area: label;
   margin-left: 975px;
-  /*margin-left: 88px;*/
+  font-family:"Roboto";
 }
 
 .author {
@@ -186,9 +188,9 @@ img {
 }
 
 .section1__item p {
-  font-size: 12.5px;
+  font-size: 16px;
   line-height: 1;
-  max-height: 52px;
+  max-height: 50px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -198,6 +200,7 @@ img {
 a {
   margin-top: 1px;
   padding-top: 1px;
+  font-size: 14px;
 }
 
 .section1__item-number {
@@ -213,6 +216,8 @@ a {
 }
 
 .section1__item-number .number {
+  font-style: normal;
+  font-weight: 500;
   font-size: 30px;
 }
 
@@ -393,7 +398,7 @@ footer {
   }
 
   .section1__item p {
-    font-size: 13px;
+    font-size: 16px;
     max-height: 50px;
     font-weight: normal;
     overflow: hidden;

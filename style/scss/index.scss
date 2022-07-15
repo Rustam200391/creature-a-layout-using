@@ -38,7 +38,7 @@ body, *, *::after, *::before {
   
   @font-face {
     font-family:"Roboto";
-    src: url("./fonts/roboto.eot");
+    src: url("../../fonts/Roboto/Roboto.ttf");
     font-style:normal;
     font-weight:normal;
   }
@@ -49,6 +49,7 @@ body, *, *::after, *::before {
     grid-template-columns: 560px;
     height:48px;
     background-color: #FFFD00 ;
+    font-family: "Roboto";
   }
   
   .top {
@@ -57,10 +58,10 @@ body, *, *::after, *::before {
     
   }
   .search-container {
-  
     height:48px;
     background-color: #FFFFFF;
     position: relative;
+    font-family: "Roboto";
   }
   
   .search-empty {
@@ -97,6 +98,7 @@ body, *, *::after, *::before {
     left: 1250px;
     top: 100px;
     border: none;
+    font-family: "Roboto";
   }
   
   img {
@@ -112,6 +114,7 @@ body, *, *::after, *::before {
     width: 950px;
     margin: 0 auto;
     padding: 110px 11px;
+    font-family: "Roboto";
   }
   
   .section1 {
@@ -220,9 +223,9 @@ body, *, *::after, *::before {
   }
   
   .section1__item p {
-    font-size: 12.5px;
+    font-size: 16px;
     line-height: 1;
-    max-height: 52px;
+    max-height: 49px;
     overflow: hidden;
     display: flex;
     flex-direction: column; 
@@ -324,6 +327,7 @@ body, *, *::after, *::before {
     left: 356px;
     top: 72px;
     border: none;
+    font-family: "Roboto";
   }
   
   .button:hover {

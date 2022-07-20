@@ -1,4 +1,6 @@
 @use '../middle/index';
+@use '../search-box/index.scss';
+@use '../state/index.scss';
 
 @mixin text-style {
     font-size: 16px;
@@ -70,12 +72,7 @@ body, *, *::after, *::before {
     margin: 20px;
   }
     
-  .search-box {
-    position:relative;
-    width:255px;
-    height: 30px;
-    border-radius:46px;
-  }
+  
   
   main {
     max-width: 1185px;
@@ -88,15 +85,7 @@ body, *, *::after, *::before {
     width: 1303px;
   }
   
-  .state {
-    position: relative;
-    text-align: left;
-    font-weight: bold;
-    font-size: 34px;
-    letter-spacing: -0.02em;
-    text-transform:capitalize;
-    line-height: 1.8;
-  }
+  
   
   ul {
     width:430px;

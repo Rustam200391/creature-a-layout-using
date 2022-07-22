@@ -1,6 +1,6 @@
-@use '../middle/index';
-@use '../search-box/index.scss';
-@use '../state/index.scss';
+@import '../middle/index';
+@import '../search-box/index.scss';
+@import '../state/index.scss';
 
 @mixin text-style {
     font-size: 16px;

@@ -1,5 +1,5 @@
 /*
-Errno::ENOENT: No such file or directory @ rb_sysopen - scss/index.scss
+Errno::ENOENT: No such file or directory @ rb_sysopen - style/index.scss
 
 Backtrace:
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `read'
@@ -20,4 +20,4 @@ C:/Ruby31-x64/bin/sass:32:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - scss/index.scss"; }
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style/index.scss"; }

@@ -1,0 +1,21 @@
+.middle {
+    display: flex;
+    flex-direction: row;
+    height: 486px;
+    width: 1303px;
+    background-color: blueviolet;
+    .middle-img {
+      width: 2114px;
+      height:376.94;
+      object-fit: cover;
+      flex-direction: row;
+      margin: 61px 75px;
+      background-size: cover;
+    }
+    .middle-text {
+      color: #FFFFFF;
+      position: relative;
+      margin: 70px ;
+      margin-right: 80px;
+    }
+  }

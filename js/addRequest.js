@@ -11,7 +11,7 @@ request.then(response => response.json())
     const articleSave =  `<section class="section1__item">
          <figure class="image-container">
              <section class="img-gradient"></section>
-             <img src="./imgs/leaving for all.png" alt="image" />
+             <img src="${article.pic}" alt="image" />
             
          </figure>
          <article class="section1__item-content">
@@ -27,7 +27,7 @@ request.then(response => response.json())
      </section>`;
      articleListParentNode.insertAdjacentHTML('beforeend', articleSave) 
     });
-
+// getElementsByid.innerHTML = document.getElementsByClassName('article');
 })
   .catch(error => {//если метод вообще не может выполнить промис
     //  обработка ошибки

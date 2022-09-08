@@ -6,212 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rustam Guseinov">
     <link rel="stylesheet" href="style/css/index.css">
-    <script src="./js/addRequest.js"></script>
+    <script src="./js/addRequest.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div class="maket">
         <header>
-            <h2 class="top">My Blog</h2>
+            <div class="container">
+                <h2 class="top">My Blog</h2>
+            </div>
+
         </header>    
 
         <nav class="search-container">
-            <section class="search-empty"></section>
-            <input type="search" placeholder="Search" class="search-box">
-            <a href="#" class="article">Добавить статью</a>
-            <a href ="#" class="author" >Об авторе</a>
+            <div class="container">
+                <div class="nav_inner">
+                    <input type="search" placeholder="Search" class="search-box">
+                    <a href="#" class="article">Добавить статью</a>
+                    <a href ="#" class="author" >Об авторе</a>
+                </div>
+                <!-- <section class="search-empty"></section> -->
+            </div>
         </nav>
 
         <input type="button" value="Вернуться к началу" class="back">
         <main class="container">
 
             <section class="section1">
-
-                <section class="section1__item">
-                    <figure class="image-container">
-                        <section class="imgMain-gradient"></section>
-                        <img src="./imgs/leaving for all.png" alt="image" />
-                    </figure>
-                    <article class="section1__item-content">
-                        <h2>Название статьи</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a href="#">Читать далее</a>
-                        <section class="section1__item-number">
-                            <section class="number">300</section>
-                            <section class="plus"></section>
-                            <section class="minus"></section>
-                        </section>
-                    </article>
-                </section>
-
-                <section class="section1__item">
-                    <figure class="imageMini-container">
-                        <section class="imgMini-gradient"></section>
-                        <img src="./imgs/leaving for all.png" alt="image"  />
-                    </figure>
-                    <article class="section1__item-content">
-                        <h2>Название статьи</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a href="#">Читать далее</a>
-                        <section class="section1__item-number">
-                            <section class="number">300</section>
-                            <section class="plus"></section>
-                            <section class="minus"></section>
-                        </section>
-                    </article>
-                </section>
-                <section class="section1__item">
-                    <figure class="imageMini-container">
-                        <section class="imgMini-gradient"></section>
-                        <img src="./imgs/party people.jpg" alt="image" />
-                    </figure>
-                    <article class="section1__item-content">
-                        <h2>Название статьи</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a href="#">Читать далее</a>                  
-                        <section class="section1__item-number">
-                            <section class="number">300</section>
-                            <section class="plus"></section>
-                            <section class="minus"></section>
-                        </section>
-                    </article>
-                </section>
-                <section class="section1__item">
-                    <figure class="imageMini-container">
-                        <section class="imgMini-gradient"></section>
-                        <img src="./imgs/scream people.jpg" alt="image" />
-                    </figure>
-                    <article class="section1__item-content">
-                        <h2>Название статьи</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a href="#">Читать далее</a>                    
-                        <section class="section1__item-number">
-                            <section class="number">300</section>
-                            <section class="plus"></section>
-                            <section class="minus"></section>
-                        </section>
-                    </article>
-                </section>
-                <section class="section1__item">
-                    <figure class="imageMini-container">
-                        <section class="imgMini-gradient"></section>
-                        <img src="./imgs/leaving for all.png" alt="image" />
-                    </figure>
-                    <article class="section1__item-content">
-                        <h2>Название статьи</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a href="#">Читать далее</a>
-                        <section class="section1__item-number">
-                            <article class="number">300</article>
-                            <section class="plus"></section>
-                            <section class="minus"></section>
-                        </section>
-                    </article>
-                </section>
-
-                <section class="section1__item">
-                    <figure class="imageMiddle-container">
-                        <section class="imgMiddle-gradient"></section>
-                        <img src="./imgs/leaving for all.png" alt="image" />
-                    </figure>
-                    <article class="section1__item-content">
-                        <h2>Название статьи</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a href="#">Читать далее</a>
-                        <section class="section1__item-number">
-                            <section class="number">300</section>
-                            <section class="plus"></section>
-                            <section class="minus"></section>
-                        </section>
-                    </article>
-                </section>
-
-                <section class="section1__item">
-                    <figure class="imageMiddle-container">
-                        <section class="imgMiddle-gradient"></section>
-                        <img src="./imgs/party people.jpg" alt="image" />
-                    </figure>
-                    <article class="section1__item-content">
-                        <h2>Название статьи</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a href="#">Читать далее</a>
-                        <section class="section1__item-number">
-                            <section class="number">300</section>
-                            <section class="plus"></section>
-                            <section class="minus"></section>
-                        </section>
-                    </article>
-                </section>
-
-                <section class="section1__item">
-                    <figure class="imageMiddle-container">
-                        <section class="imgMiddle-gradient"></section>
-                        <img src="./imgs/scream people.jpg" alt="image" />
-                    </figure>
-                    <article class="section1__item-content">
-                        <h2>Название статьи</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a href="#">Читать далее</a>
-                        <section class="section1__item-number">
-                            <section class="number">300</section>
-                            <section class="plus"></section>
-                            <section class="minus"></section>
-                        </section>
-                    </article>
-                </section>
-
-                <section class="section1__item">
-                    <figure class="imageMiddle-container">
-                        <section class="imgMiddle-gradient"></section>
-                        <img src="./imgs/leaving for all.png" alt="image" />
-                    </figure>
-                    <article class="section1__item-content">
-                        <h2>Название статьи</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a href="#">Читать далее</a>
-                        <section class="section1__item-number">
-                            <section class="number">300</section>
-                            <section class="plus"></section>
-                            <section class="minus"></section>
-                        </section>
-                    </article>
-                </section>
-
-                <section class="section1__item">
-                    <figure class="imageMiddle-container">
-                        <section class="imgMiddle-gradient"></section>
-                        <img src="./imgs/leaving for all.png" alt="image" />
-                    </figure>
-                    <article class="section1__item-content">
-                        <h2>Название статьи</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a href="#">Читать далее</a>
-                        <section class="section1__item-number">
-                            <section class="number">300</section>
-                            <section class="plus"></section>
-                            <section class="minus"></section>
-                        </section>
-                    </article>
-                </section>
-
-                <section class="section1__item">
-                    <figure class="imageMiddle-container">
-                        <section class="imgMiddle-gradient"></section>
-                        <img src="./imgs/scream people.jpg" alt="image" />
-                    </figure>
-                    <article class="section1__item-content">
-                        <h2>Название статьи</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a href="#">Читать далее</a>
-                        <section class="section1__item-number">
-                            <section class="number">300</section>
-                            <section class="plus"></section>
-                            <section class="minus"></section>
-                        </section>
-                    </article>
-               </section>
-               <input type="button" value="Больше статей" class="button">
+                
             </section>
+            <input type="button" value="Больше статей" class="button">
         </main>
     </div>      
 

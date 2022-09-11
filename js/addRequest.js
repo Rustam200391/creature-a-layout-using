@@ -1,5 +1,5 @@
 
-const articleListParentNode = document.querySelector('.section1');//почитать про querySelector находим через Doom добавить статью
+const articleListParentNode = document.querySelector('.section1');// находим через Doom добавить статью querySelector 
 console.log(articleListParentNode);
 
 let request = fetch('http://localhost:3000/article/?limit=11');//запрашиваем элементы с бэкенда, а затем помещаем их в список статей, используя для этого шаблон статьи
@@ -17,7 +17,7 @@ request.then(response => response.json())
          <article class="section1__item-content">
              <h2>${article.title}</h2>
              <p>${article.content}</p>
-              <a href="#">Читать далее</a>
+              <a href="../Article.htm" target="_blank" rel="noopener noreferrer">Читать далее</a> 
              <section class="section1__item-number">
                 <section class="number">300</section>
                 <section class="plus"></section>
@@ -27,7 +27,12 @@ request.then(response => response.json())
      </section>`;
      articleListParentNode.insertAdjacentHTML('beforeend', articleSave) 
     });
-// getElementsByid.innerHTML = document.getElementsByClassName('article');
+    const link = document.getElementsByTagName('a')[2];
+    // находим карточку по классу через doom
+
+
+    // section.innerHTML = document.getElementsByClassName('article');
+// через innerHtml импортируем эту карточку в section1
 })
   .catch(error => {//если метод вообще не может выполнить промис
     //  обработка ошибки

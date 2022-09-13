@@ -44,7 +44,8 @@ body, *, *::after, *::before {
   src: url("../../fonts/Roboto/Roboto.ttf");
   font-style: normal;
   font-weight: normal; }
-.top {
+
+  .top {
   font-size: 20px;
   padding: 11px 0;
   /* margin-top: 1px; */

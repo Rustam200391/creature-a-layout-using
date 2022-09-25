@@ -28,9 +28,9 @@ const articleSave =  `<section class="section1__item">
 function retrieveFormDataValue(event) { 
     event.preventDefault();
 
-    const pic = addData.querySelector('[pic = "pic"]'),//находим картинку
-        title = addData.querySelector('[title = "h2"]'),//находим заголовок статьи
-        content = addData.querySelector('[content = "p"]');// находим содержание
+    const pic = getData.querySelector('[pic = "pic"]'),//находим картинку
+        title = getData.querySelector('[title = "h2"]'),//находим заголовок статьи
+        content = getData.querySelector('[content = "p"]');// находим содержание
 
     const values = {
         pic: pic.value,

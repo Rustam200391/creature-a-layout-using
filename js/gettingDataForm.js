@@ -1,7 +1,9 @@
 const getData = document.getElementsByClassName('section1__item');
 const article = document.getElementsByClassName('article');// через Dom обращаемся к элементу 'добавить статью'
 const img = document.getElementsByTagName('img');// находим элемент по названию тега
-
+const file = document.querySelector('input[type=file]').files[0];
+const preview = document.querySelector('img');
+const reader = new FileReader();
 
 //шаблон статьи
 const articleSave =  `<section class="section1__item">
@@ -38,19 +40,34 @@ function retrieveFormDataValue(event) {
 
 }
 
-article.addEventListener('click', retrieveFormDataValue);// по событию клика вытаскиваем картинку,заголовок и содержание
+article[0].addEventListener('click', retrieveFormDataValue);// по событию клика вытаскиваем картинку,заголовок и содержание
 
 //преобразовываем файлы в data-url, с base64 строкой, для отправки файла в json 
-function getBase64(file) {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = error => reject(error);
-    });
-  }
+// function getBase64(file) {
+//     return new Promise((resolve, reject) => {
+//       const reader = new FileReader();
+//       reader.readAsDataURL(file);
+//       reader.onload = () => resolve(reader.result);
+//       reader.onerror = error => reject(error);
+//     });
+//   }
   
  
-  getBase64(img).then(
-    data => console.log(data)
-  );
+//   getBase64(img[0]).then(
+//     data => console.log(data)
+//   );
+
+  function previewFile() {
+    const preview = document.querySelector('img');
+    const file = document.querySelector('input[type=file]').files[0];
+    const reader = new FileReader();
+  
+    reader.addEventListener("load", () => {
+      // convert image file to base64 string
+      preview.src = reader.result;
+    }, false);
+  
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  }

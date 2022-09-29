@@ -70,7 +70,6 @@ body, *, *::after, *::before {
   .article, .author {
     margin-left: 30px;
   }
-  
 
   .article {
     position: relative;
@@ -150,7 +149,36 @@ body, *, *::after, *::before {
   font-size: 45px;
 }
   
-  
+#content-input {
+  width: 513px;
+  height:313px;
+}
+
+#title-input {
+  width: 513px;
+}
+
+#pic-input {
+  margin-left: 50px;
+}
+
+.container-for-buttons {
+  display: flex;
+  justify-content:space-around;
+  margin: 20px 20px;
+}
+
+/* кнопки отправить и очистить */
+.form-button1, .form-button2 {
+  margin: 2px;
+
+  width: 220px;
+}
+// фон кнопки
+.form-button2 {
+  background-color: #FFE600;
+}
+
   
   img {
     width: 226px;

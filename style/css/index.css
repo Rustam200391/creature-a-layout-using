@@ -168,14 +168,24 @@ body, *, *::after, *::before {
   margin-left: 50px;
 }
 
+.container-for-buttons {
+  display: flex;
+  justify-content:space-around;
+  margin: 20px 20px;
+}
+
+
+
 /* кнопки отправить и очистить */
 .form-button1, .form-button2 {
-  display: inline-block;
   margin: 2px;
 
   width: 220px;
 }
 
+.form-button2 {
+  background-color: #FFE600;
+}
 
 /*# sourceMappingURL=index.css.map */
 

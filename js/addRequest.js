@@ -1,13 +1,11 @@
 
 const articleListParentNode = document.querySelector('.section1');// находим через Doom добавить статью querySelector 
-console.log(articleListParentNode);
 
 let request = fetch('http://localhost:3000/article/?limit=11');//запрашиваем элементы с бэкенда, а затем помещаем их в список статей, используя для этого шаблон статьи
 request.then(response => response.json())
 .then(data => {
   data.forEach(article =>  
     {
-    console.log(article)
     const articleSave =  `<section class="section1__item">
          <figure class="image-container">
              <section class="img-gradient"></section>

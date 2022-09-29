@@ -122,8 +122,8 @@ body, *, *::after, *::before {
   /* позиционируем само окно абсолютно, относительно фона */
   background: #ffffff; 
   /*  белый фон окна */
-  width: 400px; 
-  /* ширина в 400px */
+  width: 575px; 
+  /* ширина в 600px */
   left: 50%; 
   /* отступ слева 50% */
   top: 50%; 
@@ -154,6 +154,28 @@ body, *, *::after, *::before {
   /* центрируем относительно горизонтальной оси */
   font-size: 45px;
 }
+/* поля загрузки текста, названия статьи и картинки */
+#content-input {
+  width: 513px;
+  height:313px;
+}
+
+#title-input {
+  width: 513px;
+}
+
+#pic-input {
+  margin-left: 50px;
+}
+
+/* кнопки отправить и очистить */
+.form-button1, .form-button2 {
+  display: inline-block;
+  margin: 2px;
+
+  width: 220px;
+}
+
 
 /*# sourceMappingURL=index.css.map */
 
@@ -531,6 +553,11 @@ footer {
 
   .button {
     left: 42%; }  */
+
+    .article,
+    .author {
+      display: none;
+    }
     .section1 {
       display: block;
     }

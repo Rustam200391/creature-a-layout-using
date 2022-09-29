@@ -40,19 +40,23 @@
         </main>
     </div>
     
-    <div class="popup-bg">
+    <form id="create-articleForm" class="popup-bg">
         <div class="popup">
             <img class="close-popup" src="./imgs/close.png" alt="закрыть">
         </br>
-                <label> </label>
-                <input type="file" name="file" onchange="previewFile()" >
-                <textarea name="file"></textarea></br>
-                <button type="submit" name="отправить">Отправить</button></br>
-                <img class="send" src="" alt="отправить">
-           </form>
-            
+                <h3>Добавление новой статьи</h3></br>
+                <label>Название статьи</label></br>
+                <input type="" name="article" id="title-input"></br>
+                <label>Текст статьи</label></br>
+                <textarea name="file" id="content-input" width:20px></textarea></br>
+                </br><img class="send" src="" alt="отправить">
+                <input type="file" name="file" id='pic-input' onchange="previewFile()"></br>
+                <button class='form-button1' type="clear" name="очистить">Очистить</button></br>
+                <button class='form-button2' type="submit" name="отправить">Добавить</button></br>
+                
         </div>
-    </div>
+            
+    </form>
     
     <script src="./js/jquery/jquery-3.6.1.min.js" defer></script>
     <script src="./js/gettingDataForm.js" defer></script>

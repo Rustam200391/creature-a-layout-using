@@ -18,7 +18,7 @@ addNewArticleForm.addEventListener('submit', retrieveFormDataValue);
 
 function retrieveFormDataValue(event) { 
     
-    console.log('event',event.target);
+    // console.log('event',event.target);
     event.preventDefault();
 
 

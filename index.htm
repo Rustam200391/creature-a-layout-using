@@ -40,20 +40,20 @@
         </main>
     </div>
     
-    <form id="create-articleForm" class="popup-bg">
+    <form method="post" id="create-articleForm" class="popup-bg">
         <div class="popup">
             <img class="close-popup" src="./imgs/close.png" alt="закрыть">
         </br>
                 <h3>Добавление новой статьи</h3></br>
                 <label>Название статьи</label></br>
-                <input type="" name="article" id="title-input"></br>
+                <input type="text" name="article" id="title-input"></br>
                 <label>Текст статьи</label></br>
-                <textarea name="file" id="content-input" width:20px></textarea></br>
+                <input name="file" id="content-input" width:20px></input></br>
                 </br><img class="send" src="" alt="отправить">
                 <input type="file" name="file" id='pic-input' onchange="previewFile()"></br>
                 <div class="container-for-buttons">
-                    <button class='form-button1' type="clear" name="очистить">Очистить</button></br>
-                    <button class='form-button2' type="submit" name="добавить">Добавить</button></br>
+                    <button class='clear-button' type="clear" name="очистить">Очистить</button></br>
+                    <button class='add-button' id="button" type="submit" name="добавить" >Добавить</button></br>
                 </div>
                 
         </div>

@@ -15,3 +15,15 @@
            </section>
         </article>
     </section>
+
+
+//  Запрос на бэк на изменение количества лайков у статьи(меняем на бэке). Нужно указать имя свойства в объекте и его имя
+
+// fetch('https://jsonplaceholder.typicode.com/posts/1', {
+//   method: 'PATCH', // <--- имя запроса
+//   body: JSON.stringify(obj), // Тело 
+//   headers: {
+//     // Заголовки
+//   },
+// })
+  

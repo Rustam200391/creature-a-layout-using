@@ -75,4 +75,29 @@ function getBase64(file) {
 //   <input type="submit" value="Sign Up">
 // </form>
 
+// const form = document.querySelector('create-articleForm');
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+// //   Данные формы извлекаются из DOM автоматически
+// //    На вход передается элемент формы, взятый из события
+//   const formData = new FormData(e.target);
+// //    Теперь с ними можно работать
+//   formData.get('create-articleForm'); // example@example.com
+// //   values() возвращает итератор, поэтому преобразуем в массив
+//   [...formData.values()]; // ['example@example.com', 'supersecret']
+// //    Тоже итератор
+//   [...formData.entries()];
+// //   [['email', 'example@example.com'], ['password', 'supersecret']]
 
+// // Преобразование в обычный объект
+//   Object.fromEntries(formData);
+// // { email: 'example@example.com', password: 'supersecret' }
+// });
+
+// счетчик лайков
+// $('.section1__item-number').click(function(e) {
+//   const change = +e.target.dataset.change;
+//   if (change) {
+//     $('.number', this).text((i, text) => `${parseInt(text, 10) + change}`);
+//   }
+// });

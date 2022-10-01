@@ -18,8 +18,8 @@ request.then(response => response.json())
               <a href="../Article.htm" target="_blank" rel="noopener noreferrer">Читать далее</a> 
              <section class="section1__item-number">
                 <section class="number">300</section>
-                <section class="plus"></section>
-                <section class="minus"></section>
+                <section class="plus" data-change="+1"></section>
+                <section class="minus" data-change="-1"></section>
             </section>
          </article>
      </section>`;

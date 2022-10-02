@@ -14,7 +14,6 @@
     }
   }
 
-
 // Transform files in data-URL, с base64 строкой, для отправки файла в json.
 document.getElementById('button').addEventListener('click', function() {
   let files = document.getElementById('pic-input').files;
@@ -67,32 +66,6 @@ function getBase64(file) {
 //   });
 // };
 
-// Правильный способ – использовать специальный объект FormData, доступный в браузере:
-
-// <form method="post">
-//   <input name="email" value="example@example.com">
-//   <input name="password" value="supersecret">
-//   <input type="submit" value="Sign Up">
-// </form>
-
-// const form = document.querySelector('create-articleForm');
-// form.addEventListener('submit', (e) => {
-//   e.preventDefault();
-// //   Данные формы извлекаются из DOM автоматически
-// //    На вход передается элемент формы, взятый из события
-//   const formData = new FormData(e.target);
-// //    Теперь с ними можно работать
-//   formData.get('create-articleForm'); // example@example.com
-// //   values() возвращает итератор, поэтому преобразуем в массив
-//   [...formData.values()]; // ['example@example.com', 'supersecret']
-// //    Тоже итератор
-//   [...formData.entries()];
-// //   [['email', 'example@example.com'], ['password', 'supersecret']]
-
-// // Преобразование в обычный объект
-//   Object.fromEntries(formData);
-// // { email: 'example@example.com', password: 'supersecret' }
-// });
 
 // счетчик лайков
 // $('.section1__item-number').click(function(e) {

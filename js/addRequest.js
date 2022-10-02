@@ -39,5 +39,3 @@ request.then(response => response.json())
 
 
 
-
-// картинки в b64 код

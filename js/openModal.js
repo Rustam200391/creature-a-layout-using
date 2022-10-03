@@ -38,8 +38,8 @@ let dataFromForm = {
     
     let json = JSON.stringify(dataFromForm);
     
-    alert(typeof json); // мы получили строку!
-    alert(json);
+    console.log(typeof json); // мы получили строку!
+    console.log(json);
     
 }
 

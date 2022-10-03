@@ -1,4 +1,4 @@
-<section class="section1__item">
+{/* <section class="section1__item">
         <figure class="image-container">
             <section class="img-gradient"></section>
             <img src="${article.pic}" alt="image" />
@@ -15,7 +15,7 @@
            </section>
         </article>
     </section>
-
+ */}
 
 //  Запрос на бэк на изменение количества лайков у статьи(меняем на бэке). Нужно указать имя свойства в объекте и его имя
 

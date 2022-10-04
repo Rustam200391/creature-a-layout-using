@@ -169,13 +169,13 @@ body, *, *::after, *::before {
 }
 
 /* кнопки отправить и очистить */
-.form-button1, .form-button2 {
+.add-button, .clear-button {
   margin: 2px;
 
   width: 220px;
 }
 // фон кнопки
-.form-button2 {
+.add-button {
   background-color: #FFE600;
 }
 

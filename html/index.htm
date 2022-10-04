@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rustam Guseinov">
+    <link rel="stylesheet" href="../style/css/index.css">
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="maket">
+        <header>
+            <div class="container">
+                <h2 class="top">My Blog</h2>
+            </div>
+
+        </header>    
+
+        <nav class="search-container">
+            <div class="container">
+                <div class="nav_inner">
+                    <input type="search" placeholder="Search" class="search-box">
+                    <a href="#" class="article">Добавить статью</a>
+                    <a href ="#" class="author" >Об авторе</a>
+                </div>
+                <!-- <section class="search-empty"></section> -->
+            </div>
+        </nav>
+
+        <input type="button" value="Вернуться к началу" class="back">
+        <main class="container">
+
+            <section class="section1">
+                
+            </section>
+            <input type="button" value="Больше статей" class="button">
+        </main>
+    </div>
+    
+    <form method="post" id="create-articleForm" class="popup-bg">
+        <div class="popup">
+            <img class="close-popup" src="../imgs/close.png" alt="закрыть">
+        </br>
+                <h3>Добавление новой статьи</h3></br>
+                <label>Название статьи</label></br>
+                <input type="text" name="article" id="title-input"></br>
+                <label>Текст статьи</label></br>
+                <textarea name="article" type='text' id="content-input"></textarea></br>
+                </br><img class="send" src="" alt="отправить">
+                <input type="file" name="file" id='pic-input' onchange="previewFile()"></br>
+                <div class="container-for-buttons">
+                    <button class='clear-button' type="clear" name="очистить">Очистить</button>
+                <button id="button" class='add-button' type="submit" name="добавить">Добавить</button>
+                </div>
+                
+        </div>
+            
+    </form>
+    
+    <script src="../js/jquery/jquery-3.6.1.min.js" defer></script>
+    <script src="../js/All_js/addRequest.js" defer></script>
+    <script src="../js/All_js/gettingDataForm.js" defer></script>
+    <script src="../js/All_js/openModal.js" defer></script>
+</body>
+</html>

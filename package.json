@@ -23,6 +23,12 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0"
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "uglify": "^0.1.5"
   }
 }

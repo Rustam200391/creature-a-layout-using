@@ -1,11 +1,14 @@
 let gulp = require('gulp');
 let babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
+const sass = require('gulp-sass')(require('sass'));
 
 gulp.task("js", () => {
     return gulp.src("js/All_js/*.js")
     .pipe(babel({
         presets: [ '@babel/env']
     }))
+    .pipe(uglify())
     .pipe(gulp.dest("dist/js"));
 });
 
@@ -20,6 +23,6 @@ gulp.task("styles", () => {
     .pipe(gulp.dest("dist/styles/"));
 });
 
-// gulp.task("watch", () => {
-//     return gulp.watch(["js/All_js/*.js", "html/*.htm","style/scss/*.scss"], gulp.parallel["js","html","styles"]);
-// })
+gulp.task("watch", () => {
+    return gulp.watch(["js/All_js/*.js", "html/*.htm","style/scss/*.scss"], gulp.parallel["js","html","styles"]);
+})

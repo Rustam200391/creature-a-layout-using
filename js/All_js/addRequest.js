@@ -26,11 +26,39 @@ request.then(response => response.json())
      articleListParentNode.insertAdjacentHTML('beforeend', articleSave) 
     });
     const link = document.getElementsByTagName('a')[2];
-    // находим карточку по классу через doom
+    // находим карточку по тегу через doom
 
 
-    // section.innerHTML = document.getElementsByClassName('article');
-// через innerHtml импортируем эту карточку в section1
+    //предопределяем кнопку при клике на которую произойдет загрузка остальных 10 статей
+    const moreArticles = document.getElementById('more-article');
+
+    let addButton =  fetch('http://localhost:3000/article/?offset=2');//запрашиваем элементы с бэкенда, а   затем помещаем их в список статей, используя для этого шаблон статьи
+    addButton.then(response => response.json())
+    .then(data => {
+      data.forEach(moreArticle=>  
+        {
+        const buttonSave =  `<section class="section1__item">
+        <figure class="image-container">
+            <section class="img-gradient"></section>
+            <img src="${moreArticle.pic}" alt="image" />
+        </figure>
+        <article class="section1__item-content">
+            <h2>${moreArticle.title}</h2>
+            <p>${moreArticle.content}</p>
+             <a href="../Article.htm" target="_blank" rel="noopener noreferrer">Читать далее</a> 
+            <section class="section1__item-number">
+               <section class="number">300</section>
+               <section class="plus" data-change="+1"></section>
+               <section class="minus" data-change="-1"></section>
+           </section>
+        </article>
+    </section>`;
+      moreArticles.insertAdjacentHTML('beforeend', buttonSave) 
+      });
+      const pushButton = document.getElementsByTagName('input')[2];
+      // находим кнопку по тегу через doom
+  })
+
 })
   .catch(error => {//если метод вообще не может выполнить промис
     //  обработка ошибки
@@ -39,3 +67,14 @@ request.then(response => response.json())
 
 
 
+
+
+
+
+// // счетчик лайков
+// $('.section1__item-number').click(function(e) {
+//   const change = +e.target.dataset.change;
+//   if (change) {
+//     $('.number', this).text((i, text) => `${parseInt(text, 10) + change}`);
+//   }
+// });

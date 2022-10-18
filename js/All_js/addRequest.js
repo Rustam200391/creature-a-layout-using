@@ -1,12 +1,12 @@
 
-const articleListParentNode = document.querySelector('.section1');// находим через Doom добавить статью querySelector 
+const articleListParentNode = document.querySelector(".section1"); // находим через Doom добавить статью querySelector
 
-let request = fetch('http://localhost:3000/article/?limit=11');//запрашиваем элементы с бэкенда, а затем помещаем их в список статей, используя для этого шаблон статьи
-request.then(response => response.json())
-.then(data => {
-  data.forEach(article =>  
-    {
-    const articleSave =  `<section class="section1__item">
+const request = () => {
+  fetch("http://localhost:3000/article/?offset=5") //запрашиваем элементы с бэкенда, а затем помещаем их в список статей, используя для этого шаблон статьи
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((article) => {
+        const articleSave = `<section class="section1__item">
          <figure class="image-container">
              <section class="img-gradient"></section>
              <img src="${article.pic}" alt="image" />
@@ -23,27 +23,17 @@ request.then(response => response.json())
             </section>
          </article>
      </section>`;
-     articleListParentNode.insertAdjacentHTML('beforeend', articleSave) 
+        articleListParentNode.insertAdjacentHTML("beforeend", articleSave);
+      });
+    })
+    .catch((error) => {
+      console.log(error);
     });
-    const link = document.getElementsByTagName('a')[2];
-    // находим карточку по тегу через doom
+};
 
-        //предопределяем кнопку при клике на которую произойдет загрузка остальных 10 статей
-    // let addButton =  fetch('http://localhost:3000/article/?offset=2');//запрашиваем элементы с бэкенда, а   затем помещаем их в список статей, используя для этого шаблон статьи
+const moreArticles = document.getElementById("more-article");
 
-})
-  
-  .catch(error => {//если метод вообще не может выполнить промис
-    //  обработка ошибки
-    console.log( error );
-});
-
-const moreArticles = document.getElementById('more-article');
-
-
-moreArticles.addEventListener('click',request());
-    // вешаеам обработчик событий при клике на мышью
-
+moreArticles.addEventListener("click", request);
 
 
 

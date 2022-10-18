@@ -2,7 +2,7 @@
 const articleListParentNode = document.querySelector(".section1"); // находим через Doom добавить статью querySelector
 
 const request = () => {
-  fetch("http://localhost:3000/article/?offset=5") //запрашиваем элементы с бэкенда, а затем помещаем их в список статей, используя для этого шаблон статьи
+  fetch("http://localhost:3000/article/?offset=10") //запрашиваем элементы с бэкенда, а затем помещаем их в список статей, используя для этого шаблон статьи
     .then((response) => response.json())
     .then((data) => {
       data.forEach((article) => {
@@ -37,9 +37,8 @@ moreArticles.addEventListener("click", request);
 
 
 
+// // // счетчик лайков
 
-
-// // счетчик лайков
 // $('.section1__item-number').click(function(e) {
 //   const change = +e.target.dataset.change;
 //   if (change) {

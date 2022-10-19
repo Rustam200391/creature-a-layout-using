@@ -33,9 +33,26 @@ const request = () => {
 
 const moreArticles = document.getElementById("more-article");
 
-moreArticles.addEventListener("click", request);
+
+function examplesOffset() {
+  let offset = 0;
+  console.log(offset);
+  moreArticles.addEventListener('click', (e) => {
+    offset +=10;
+    
+    // выводим в косоль \
+    request(offset);
+}
 
 
+// const request = () => {
+//   fetch("http://localhost:3000/article/?offset=10") 
+
+//   moreArticles.addEventListener(console.log(request)) {
+//     fetch("http://localhost:3000/article/?offset=10+10")
+//   }
+//   затем на обработчик событий вешается  событие, которое печатает в консоль текущий офсет, а затем увеличивает офсет на 10
+//   Т.е событие вешается на нашу кнопку
 
 // // // счетчик лайков
 

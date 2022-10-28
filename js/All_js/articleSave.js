@@ -1,3 +1,5 @@
+import article from './incomingArticle.js';
+
 const articleSave = `<section class="section1__item">
       <figure class="image-container">
           <section class="img-gradient"></section>

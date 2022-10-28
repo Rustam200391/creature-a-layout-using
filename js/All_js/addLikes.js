@@ -1,4 +1,4 @@
-const likesCounter = (id, body, counter) => {
+const addLikes = (id, body, counter) => {
     fetch(`http://localhost:3000/article/${id}`, {
       method: 'PATCH',
       headers: {
@@ -11,6 +11,6 @@ const likesCounter = (id, body, counter) => {
       .catch((error) => console.error(error));
   };
   
-  export default likesCounter ;
+  export default addLikes ;
   
   

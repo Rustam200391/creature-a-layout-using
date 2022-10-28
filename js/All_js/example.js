@@ -1,4 +1,4 @@
-import {request} from './like.js'
+import {request} from './incomingArticle.js'
 // const parse = require('node-html-parser');
 // const request = require('./like.js')
 

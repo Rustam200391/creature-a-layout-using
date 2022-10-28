@@ -3,6 +3,7 @@ import {articleSave} from './articleSave';
 
 const articleListParentNode = document.querySelector(".section1"); // находим через Doom добавить статью querySelector
 const request = (offset = 0) => {
+  console.log('ghbdtn')
   fetch(`http://localhost:3000/article/?offset=${offset}`) //запрашиваем элементы с бэкенда, а затем помещаем их в список статей, используя для этого шаблон статьи
   .then((response) => response.json())
   .then((data) => {

@@ -11,6 +11,6 @@ const addLikes = (id, body, counter) => {
       .catch((error) => console.error(error));
   };
   
-  export default addLikes ;
+export default addLikes;
   
   

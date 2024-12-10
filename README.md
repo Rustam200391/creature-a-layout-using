@@ -1,6 +1,6 @@
 My first repozitorium
 # frontend
-The project is based on layout layout using CSS and SCSS, the layout function is carried out by the JS language.
+The project is based on layout layout using CSS and SCSS, the layout function is carried out by the JS language.</abr>
 
 
 ## Getting started

@@ -1,4 +1,4 @@
-My first repozitorium
+My first repozitorium</i>
 # frontend
 The project is based on layout layout using CSS and SCSS, the layout function is carried out by the JS <abr>language.</abr>
 
